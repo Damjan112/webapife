@@ -1,0 +1,12 @@
+<div class="dialog-container">
+  <h2 class="country-title">Country Details</h2>
+  <hr />
+  <div class="details">
+    <h2 class="country-name">Country Name: {{ country.countryName }}</h2>
+    <p class="country-id">Country ID: {{ country.countryId }}</p>
+  </div>
+  <div class="button-wrapper">
+    <button class="edit-button" (click)="onEditClick()">Edit</button>
+    <button class="delete-button" (click)="onDeleteClick()">Delete</button>
+  </div>
+</div>

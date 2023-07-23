@@ -1,0 +1,28 @@
+<div class="content-wrapper">
+    <form (ngSubmit)="onUpdateCompanySubmit()">
+      <h2>Edit Company</h2>
+  
+      <label for="companyId">Company ID:</label>
+      <input
+        type="number"
+        id="companyId"
+        name="companyId"
+        [(ngModel)]="company.companyId"
+        required
+        readonly
+      />
+  
+      <label for="companyName">Company Name:</label>
+      <input
+        type="text"
+        id="companyName"
+        name="companyName"
+        [(ngModel)]="company.companyName"
+        required
+      />
+  
+      <button type="submit" class="create-button">Update</button>
+      <button type="button" (click)="goBack()">Cancel</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,46 @@
+<h2>Contacts List</h2>
+<div class="button-wrapper">
+  <h3>Filter for contacts</h3>
+  <button class="create-button" (click)="onCreateContactClick()">
+    Create New Contact
+  </button>
+</div>
+
+<div class="filter-container">
+  
+  <label for="companyId">Company ID:</label>
+  <input
+    type="number"
+    id="companyId"
+    name="companyId"
+    [(ngModel)]="selectedCompanyId"
+    (change)="applyFilters()"
+    (keyup.enter)="applyFilters()"
+  />
+
+  <label for="countryId">Country ID:</label>
+  <input
+    type="number"
+    id="countryId"
+    name="countryId"
+    [(ngModel)]="selectedCountryId"
+    (change)="applyFilters()"
+    (keyup.enter)="applyFilters()"
+  />
+
+  <button class="reset-button" (click)="resetFilters()">Reset Filters</button>
+</div>
+
+<div class="contact-list">
+  <div
+    *ngFor="let contact of contacts"
+    class="contacts-card"
+    (click)="onContactCardClick(contact.contactId)"
+  >
+    <h3>{{ contact.contactName }}</h3>
+    <p>Contact ID: {{ contact.contactId }}</p>
+  </div>
+  <div class="message-box" *ngIf="deletedStatus">
+    <p class="message-box-text">Contact deleted successfully!</p>
+  </div>
+</div>

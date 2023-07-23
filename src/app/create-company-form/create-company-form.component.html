@@ -1,0 +1,17 @@
+<div class="content-wrapper">
+  <form (ngSubmit)="onCreateCompanySubmit()">
+    <h2>Create New Company</h2>
+
+    <label for="companyName">Company Name:</label>
+    <input
+      type="text"
+      id="companyName"
+      name="companyName"
+      [(ngModel)]="newCompany.companyName"
+      required
+    />
+
+    <button type="submit" class="create-button">Create</button>
+    <button type="button" (click)="goBack()">Back</button>
+  </form>
+</div>

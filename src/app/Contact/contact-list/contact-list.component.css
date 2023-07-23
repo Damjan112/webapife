@@ -1,0 +1,176 @@
+@media (max-width: 600px) {
+  .contact-list {
+    justify-content: center;
+  }
+
+  .contacts-card {
+    min-width: 100%;
+    max-width: 400px;
+  }
+
+  .button-wrapper {
+    justify-content: center;
+  }
+
+  .create-button {
+    max-width: 200px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contact-list {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contacts-card {
+    min-width: 45%;
+    max-width: 300px;
+  }
+
+  .button-wrapper {
+    justify-content: center;
+  }
+
+  .create-button {
+    max-width: 150px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contact-list {
+    gap: 20px;
+  }
+
+  .contacts-card {
+    min-width: 250px;
+    max-width: 300px;
+  }
+
+  .button-wrapper {
+    justify-content: flex-end;
+  }
+
+  .create-button {
+    max-width: 200px;
+    font-size: 18px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-card {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.contacts-card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.contacts-card:active {
+  background-color: #d0d0d0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+h2 {
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+.create-button:active {
+  background-color: #004d99;
+}
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 0, 0, 0.9); /* Semi-transparent red background color */
+  color: #000000; /* White text color */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure the message box is on top of other elements */
+}
+.message-box-text{
+color:white;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  margin-right: 10px;
+}
+
+.filter-container input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.filter-container button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.filter-container button:hover {
+  background-color: #0056b3;
+}
+
+.filter-container button:active {
+  background-color: #004d99;
+}

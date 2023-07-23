@@ -1,0 +1,20 @@
+<h2>Companies List</h2>
+<div class="button-wrapper">
+  <button class="create-button" (click)="onCreateCompanyClick()">
+    Create New Company
+  </button>
+</div>
+
+<div class="company-list">
+  <div
+    *ngFor="let company of companies"
+    class="company-card"
+    (click)="onCompanyCardClick(company.companyId)"
+  >
+    <h3>{{ company.companyName }}</h3>
+    <p>Company ID: {{ company.companyId }}</p>
+  </div>
+  <div class="message-box" *ngIf="deletedStatus">
+    <p class="message-box-text">Company deleted successfully!</p>
+  </div>
+</div>

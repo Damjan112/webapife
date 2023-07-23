@@ -1,0 +1,12 @@
+<div class="dialog-container">
+  <h2 class="company-title">Company Details</h2>
+  <hr />
+  <div class="details">
+    <h2 class="company-name">Company Name: {{ company.companyName }}</h2>
+    <p class="company-id">Company ID: {{ company.companyId }}</p>
+  </div>
+  <div class="button-wrapper">
+    <button class="edit-button" (click)="onEditClick()">Edit</button>
+    <button class="delete-button" (click)="onDeleteClick()">Delete</button>
+  </div>
+</div>

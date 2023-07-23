@@ -1,0 +1,28 @@
+<div class="content-wrapper">
+    <form (ngSubmit)="onUpdateCountrySubmit()">
+      <h2>Edit Country</h2>
+  
+      <label for="countryId">Country ID:</label>
+      <input
+        type="number"
+        id="countryId"
+        name="countryId"
+        [(ngModel)]="country.countryId"
+        required
+        readonly
+      />
+  
+      <label for="countryName">Country Name:</label>
+      <input
+        type="text"
+        id="countryName"
+        name="countryName"
+        [(ngModel)]="country.countryName"
+        required
+      />
+  
+      <button type="submit" class="create-button">Update</button>
+      <button type="button" (click)="goBack()">Cancel</button>
+    </form>
+  </div>
+  

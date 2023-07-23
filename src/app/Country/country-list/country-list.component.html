@@ -1,0 +1,20 @@
+<h2>Country List</h2>
+<div class="button-wrapper">
+  <button class="create-button" (click)="onCreateCountryClick()">
+    Create New Country
+  </button>
+</div>
+
+<div class="country-list">
+  <div
+    *ngFor="let country of countries"
+    class="countries-card"
+    (click)="onCountryCardClick(country.countryId)"
+  >
+    <h3>{{ country.countryName }}</h3>
+    <p>Country ID: {{ country.countryId }}</p>
+  </div>
+  <div class="message-box" *ngIf="deletedStatus">
+    <p class="message-box-text">Country deleted successfully!</p>
+  </div>
+</div>

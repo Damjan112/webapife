@@ -1,0 +1,16 @@
+<div class="dialog-container">
+  <h2 class="contact-title">Contact Details</h2>
+  <hr />
+  <div class="details">
+    <h2 class="contact-name">Contact Name: {{ contact.contactName }}</h2>
+    <p class="contact-id">Contact ID: {{ contact.contactId }}</p>
+    <p class="contact-id">Company ID: {{ contact.company.companyId }}</p>
+    <p class="contact-id">Company Name: {{ contact.company.companyName }}</p>
+    <p class="contact-id">Country ID: {{ contact.country.countryId }}</p>
+    <p class="contact-id">Country Name: {{ contact.country.countryName }}</p>
+  </div>
+  <div class="button-wrapper">
+    <button class="edit-button" (click)="onEditClick()">Edit</button>
+    <button class="delete-button" (click)="onDeleteClick()">Delete</button>
+  </div>
+</div>

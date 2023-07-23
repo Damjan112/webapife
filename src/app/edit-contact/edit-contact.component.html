@@ -1,0 +1,36 @@
+<div class="content-wrapper">
+    <form (ngSubmit)="onUpdateContactSubmit()">
+      <h2>Edit Contact</h2>
+  
+      <label for="contactName">Contact Name:</label>
+      <input
+        type="text"
+        id="contactName"
+        name="contactName"
+        [(ngModel)]="contact.contactName"
+        required
+      />
+  
+      <label for="companyId">Company ID:</label>
+      <input
+        type="number"
+        id="companyId"
+        name="companyId"
+        [(ngModel)]="contact.companyId"
+        required
+      />
+  
+      <label for="countryId">Country ID:</label>
+      <input
+        type="number"
+        id="countryId"
+        name="countryId"
+        [(ngModel)]="contact.countryId"
+        required
+      />
+  
+      <button type="submit" class="create-button">Update</button>
+      <button type="button" (click)="goBack()">Back</button>
+    </form>
+  </div>
+  

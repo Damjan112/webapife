@@ -1,0 +1,95 @@
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 3px;
+  }
+
+  .social-icons a {
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .contact-info p {
+    margin-top: 2px;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .fa {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    padding-top: 4px;
+  }
+
+  .social-icons a {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  .contact-info p {
+    margin-top: 3px;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .fa {
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .footer {
+    padding-top: 5px;
+  }
+
+  .social-icons a {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  .contact-info p {
+    margin-top: 3px;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .fa {
+    font-size: 15px;
+  }
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 3px;
+  padding: 3px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.contact-info p {
+  margin-top: 3px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.fa {
+  font-size: 15px;
+}

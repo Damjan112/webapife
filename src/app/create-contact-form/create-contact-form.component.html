@@ -1,0 +1,56 @@
+<div class="content-wrapper">
+  <form (ngSubmit)="onCreateContactSubmit()">
+    <h2>Create New Contact</h2>
+    <label for="contactName">Contact Name:</label>
+    <input
+      type="text"
+      id="contactName"
+      name="contactName"
+      [(ngModel)]="newContact.contactName"
+      required
+    />
+
+    <label for="companyId">Company ID:</label>
+    <small class="hint">Enter the ID of an existing company</small>
+    <input
+      type="number"
+      id="companyId"
+      name="companyId"
+      [(ngModel)]="newContact.companyId"
+      required
+    />
+
+    <label for="countryId">Country ID:</label>
+    <small class="hint">Enter the ID of an existing country</small>
+    <input
+      type="number"
+      id="countryId"
+      name="countryId"
+      [(ngModel)]="newContact.countryId"
+      required
+    />
+
+    <label for="companyName">Company Name:</label>
+    <input
+      type="text"
+      id="companyName"
+      name="companyName"
+      placeholder="Leave this blank if using an existing company"
+      [(ngModel)]="newContact.company.companyName"
+      required
+    />
+
+    <label for="countryName">Country Name:</label>
+    <input
+      type="text"
+      id="countryName"
+      name="countryName"
+      placeholder="Leave this blank if using an existing country"
+      [(ngModel)]="newContact.country.countryName"
+      required
+    />
+
+    <button type="submit" class="create-button">Create</button>
+    <button type="button" (click)="goBack()">Back</button>
+  </form>
+</div>
